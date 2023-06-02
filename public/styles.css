@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap");
+
+@import url("stylesHeaderFooter.css");
+@import url("stylesFormFields.css");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/* Home, About Us, Contact Us */
+.starting {
+    margin: 3rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .starting h1 {
+    margin: 3rem 0;
+  }
+
+/* BlogPage */
+hr {
+    width: 60%;
+    margin: 2rem auto;
+    border: 2px solid #38015c;
+}
+
+/* PostItem */
+.readMore,
+.readMore:hover {
+    border: none;
+    background-color: white;
+    color: blue;
+}
+
+.post a {
+    text-decoration: none;
+}
+
+/* CreatePost */
+div.success {
+    background-color: rgba(144, 238, 144, .8);
+    padding: 0.5rem;
+}
+
+/* Link element */
+a:hover,
+a.active {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .modal {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+    width: 60%;
+  }
+
+  /* Loading Indicator */
+  .ldsRing {
+    display: inline-block;
+    position: relative;
+    width: 54px;
+    height: 54px;
+  }
+  .ldsRing div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    margin: 6px;
+    border: 6px solid #ff2058;
+    border-radius: 50%;
+    animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ff2058 transparent transparent transparent;
+  }
+  .ldsRing div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .ldsRing div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .ldsRing div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes ldsRing {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
