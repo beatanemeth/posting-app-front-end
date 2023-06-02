@@ -1,0 +1,81 @@
+.form {
+  width: 95%;
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  display: block;
+  font: inherit;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #38015c;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background-color: #f7f0fa;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin: .5rem;
+  border-radius: 4px;
+  background-color: #38015c;
+  color: white;
+  border: 1px solid #38015c;
+}
+
+button:hover {
+  background-color: #540d83;
+  border-color: #540d83;
+}
+
+
+/* AuthForm */
+.auth {
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 25rem;
+  border-radius: 6px;
+  background-color: #38015c;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+.auth h1,
+.control label,
+.actions button {
+  color: white;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  background-color: #9f5ccc;
+  border: 1px solid #9f5ccc;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions button:hover {
+  background-color: #873abb;
+  border-color: #873abb;
+}
