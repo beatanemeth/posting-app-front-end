@@ -28,7 +28,7 @@ Functionalities:
 
 ## Technical Details
 
-### Node verison used:
+### Node version used:
 
 - v18.12.0
 
@@ -60,6 +60,13 @@ Functionalities:
 #### Run backend server
 
 - **frontend** starts on **localhost:3000** and makes request to **backend** on **localhost:8000**
+
+### How to test:
+
+- open Terminal or Command Prompt
+- change to working directory (where the file is located)  
+  `$ cd /path/to/directory`  
+  `$ npm run test`
 
 ---
 
